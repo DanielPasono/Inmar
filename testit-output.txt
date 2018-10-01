@@ -1,0 +1,91 @@
+
+d:\inmar>echo off 
+######################
+   Required output
+######################
+
+d:\inmar>python piecemv.py -p wQ -s a1 
+b2,c3,d4,e5,f6,g7,h8,a2,b1,a3,c1,a4,d1,a5,e1,a6,f1,a7,g1,a8,h1
+
+d:\inmar>python piecemv.py -p wQ -s h8 
+g7,f6,e5,d4,c3,b2,a1,h7,g8,h6,f8,h5,e8,h4,d8,h3,c8,h2,b8,h1,a8
+
+d:\inmar>python piecemv.py -p wQ -s c4 
+d5,d3,b5,b3,e6,e2,a6,a2,f7,f1,g8,c5,c3,b4,d4,c6,c2,a4,e4,c7,c1,f4,c8,g4,h4
+
+d:\inmar>python piecemv.py -p bQ -s f5  
+g6,g4,e6,e4,h7,h3,d7,d3,c8,c2,b1,f6,f4,e5,g5,f7,f3,d5,h5,f8,f2,c5,f1,b5,a5
+
+d:\inmar>python piecemv.py -p wR -s a1 
+a2,b1,a3,c1,a4,d1,a5,e1,a6,f1,a7,g1,a8,h1
+
+d:\inmar>python piecemv.py -p bR -s h8 
+h7,g8,h6,f8,h5,e8,h4,d8,h3,c8,h2,b8,h1,a8
+
+d:\inmar>python piecemv.py -p wR -s c4 
+c5,c3,b4,d4,c6,c2,a4,e4,c7,c1,f4,c8,g4,h4
+
+d:\inmar>python piecemv.py -p wR -s f5  
+f6,f4,e5,g5,f7,f3,d5,h5,f8,f2,c5,f1,b5,a5
+
+d:\inmar>python piecemv.py -p wN -s a1 
+b3,c2
+
+d:\inmar>python piecemv.py -p wN -s h8 
+f7,g6
+
+d:\inmar>python piecemv.py -p bN -s c4 
+b6,d6,a5,e5,a3,e3,b2,d2
+
+d:\inmar>python piecemv.py -p wN -s f5  
+e7,g7,d6,h6,d4,h4,e3,g3
+
+d:\inmar>echo off 
+######################
+   Optional output
+######################
+
+d:\inmar>python piecemv.py -h 
+Piecemv help
+
+Piecemv accepts 2 parameters: 
+-p PIECE
+   where PIECE is a 2 letter sequence
+      The first letter signifies the piece's color, w for white or b for black
+      The second letter signifies the piece itself, 
+      using standard algebraic notation but using P for pawn
+-s SQUARE
+   where SQUARE is the standard algebraic notation of the square indicated
+
+Sample usage:
+   piecemv.py -p wN -s e3
+
+d:\inmar>python piecemv.py -p wB -s a1 
+b2,c3,d4,e5,f6,g7,h8
+
+d:\inmar>python piecemv.py -p bB -s f5  
+g6,g4,e6,e4,h7,h3,d7,d3,c8,c2,b1
+
+d:\inmar>python piecemv.py -p bK -s a1 
+b2,a2,b1
+
+d:\inmar>python piecemv.py -p wK -s f5  
+g6,g4,e6,e4,f6,f4,e5,g5
+
+d:\inmar>python piecemv.py -p wP -s b2  
+b3,b4
+
+d:\inmar>python piecemv.py -p wP -s a3 
+a4
+
+d:\inmar>python piecemv.py -p wP -s c8  
+
+
+d:\inmar>python piecemv.py -p bP -s d7  
+d6,d5
+
+d:\inmar>python piecemv.py -p bP -s c6 
+c5
+
+d:\inmar>python piecemv.py -p bP -s g1  
+
