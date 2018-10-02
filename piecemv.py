@@ -52,12 +52,6 @@ def RetrieveArgs():
 			nexta = 's'
 		elif (arg == "-h"):
 			# user asked for help
-#			print "PieceMv Help\n"
-#			print "The program takes 2 arguments: a chess piece (-p) and a chess square (-s),\nand returns all possible squares to which that piece could move,\nassuming an empty board.\n"
-#			print "White pieces are specified as: wR, wN, wB, wQ, wK, wP.\nFor black pieces, replace the letter w with the letter b.\n"
-#			print "The square is denoted in standard algebraic chess notation: a1 - h8\n\n"
-#			print "Example: piecemv.py -p wR -s a3\n"
-
 			print '''Piecemv help
 
 Piecemv accepts 2 parameters: 
